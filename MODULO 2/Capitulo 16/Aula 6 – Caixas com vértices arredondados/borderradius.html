@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            height: auto;
+            width: auto;
+            margin: 0px;
+        }
+        h1{
+            text-align: center;
+            margin: 10px;
+            box-shadow: 10px 10px 10px 2px  rgba(0, 0, 0, 0.473);/* 1º Deslocamento HORIZONTAL 2º Deslocamento VERTICAL 3° Blur 4º Spread(Espalhamento)*/
+                                                               /* Usando o DevTools vc tbm pode personalizar a sombra por la e depois transferir o codigo para ca*/
+        }
+        nav{
+            text-align: center;
+            margin: 10px;
+            padding: 3px;
+            background-color: aquamarine;
+            border-radius: 10px 10px 10px 10px; /*Voce pode configurar todas as bordas separadamente, tanto no devtools qnt aqui mesmo usando "border-top-left-radius: " para a borda de cima da esquerda e assim por diante */
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%; /* Arredonda para o formato de uma bola */
+            margin: auto;
+            background-color: aliceblue;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EXEMPLO DE SOMBREAMENTO</h1>
+        <nav>
+            <a href="link">Link</a>
+            <a href="link">Link</a>
+            <a href="link">Link</a>
+            <a href="link">Link</a>
+            <a href="link">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article> 
+                <h2></h2>
+                <p></p>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

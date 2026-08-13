@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+
+
+
+body{
+    margin: 0px;
+    background-color: rgba(71, 175, 123, 0.76);
+}
+
+header{
+    margin: 0px;
+    padding: 3px;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #1EED58, #3BAD5B, #346E45, #233328 );
+}
+header > nav > a{
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+}
+main{
+    background-color: white;
+    margin: 0px 80px 0px 80px;
+
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #025e1f;
+    font-weight: 900;
+    font-size: 2em;
+    margin: 0px 5px 5px 5px;
+}
+h3.degrade{
+    color: #025e1f;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.37), rgba(255, 255, 255, 0.452));
+    
+    margin: 5px;
+}
+p{
+    text-indent: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+.bugdroid img{
+    width: 100%;
+    
+    object-fit: cover;
+}
+.dandroid img{
+    width: 100%;
+    
+    object-fit: cover;
+}
+.verde{
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+span.verde{
+    color: green;
+}
+a:hover{
+    text-decoration: underline;
+    color: purple;
+}
+article > div{
+    background-color: #233328;
+    text-align: center;
+    
+}
+footer{
+    
+    padding: 1px;
+    margin: 0px;
+}
+footer > div{
+    background-color: #447754;
+    padding: 0px 0px 2px 0px;
+    margin: 20px;
+    border-radius: 10px;
+    
+}    
+footer > div > h4{
+    color: white;
+    background-color: rgb(29, 248, 0);
+    margin: 0px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    
+
+}
+aside{
+    background-color: #233328;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+
+        <source media="(max-width: 750px )" srcset="imagens/foto-P.png" type="image/png"> <!-- 3º -->
+    
+        <source media="(max-width: 1050px )" srcset="imagens/foto-M.png" type="image/png"> <!-- 2º Source media type, muda de min para max-->
+    
+        <img src="imagens/foto-G.png" alt="Imagem Flexivel"> <!-- 1º Neste caso o codigo começa daq e vai subindo para funcionar -->
+        
+        <!-- Se nao for nesta ordem as imagens nao funcionarão corretamente -->
+    </picture>
+    
+</body>
+</html>

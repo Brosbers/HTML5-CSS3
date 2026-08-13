@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+
+        <source media="(max-width: 750px )" srcset="imagens/foto-P.png" type="image/png"> <!-- 3º -->
+    
+        <source media="(max-width: 1050px )" srcset="imagens/foto-M.png" type="image/png"> <!-- 2º Source media type, muda de min para max-->
+    
+        <img src="imagens/foto-G.png" alt="Imagem Flexivel"> <!-- 1º Neste caso o codigo começa daq e vai subindo para funcionar -->
+        
+        <!-- Se nao for nesta ordem as imagens nao funcionarão corretamente -->
+    </picture>
+    
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+
+    <audio src="midia/sour-tennesy-red.mp3" controls autoplay></audio> <!-- Forma mais simples -->
+    <!-- MP3, OGG, WAV -->
+
+    <audio preload="metadata" autoplay controls loop> <!-- Auto: so carrega a pagina dps de carregar o audio, Metadata: carrega apenas dados do audio antes de dar pkay, None: So carrega tudo dps de dar play--> 
+
+        <source src="midia/sour-tennesy-red.mp3" type="audio/mpeg">
+        <source src="midia/sour-tennesy-red.ogg" type="audio/ogg">
+        <source src="midia/sour-tennesy-red.wav" type="audio/wav">
+        <p>Infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/sour-tennesy-red.mp3">Clique aqui para baixar o arquivo MP3</a></p> <!-- Caso nenhum formato seja aceito pelo seu navegador, a mensagem do <p> vai aparecer -->
+
+    </audio> 
+
+
+</body>
+</html>

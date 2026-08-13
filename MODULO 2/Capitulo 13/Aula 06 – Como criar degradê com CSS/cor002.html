@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        
+        * { /* Configurações globais das CSS */
+            height: 100%;
+        }
+        
+        body{
+                            
+            background-image: linear-gradient(to left/*to right, to bottom, to top*/, #C98D65, #967B69 10%/*10% dessa cor no degrade*/, #332A24); /*Quantas cores quiser*/
+            
+            background-attachment: fixed; /*Deixar o degrade fixo na tela, sem interferencia da rolagem*/
+        }
+        
+        /* Outros exemplos               usando o numero em graus
+            background-image: linear-gradient(90deg ou -90deg, #C98D65, #967B69, #332A24);
+        */
+        /* Outros exemplos        degradê em formato de objeto e etc
+            background-image: radial-gradient(circle, #C98D65, #967B69, #332A24);
+        */
+
+    </style>
+</head>
+<body>
+    
+    <h1>Testando Gradiente (Degradê)</h1>
+
+</body>
+</html>

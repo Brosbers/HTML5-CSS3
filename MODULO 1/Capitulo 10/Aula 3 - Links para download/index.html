@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    
+    <h1>Usando links EXTERNOS</h1>
+    <p>Voce pode acessar o meu <a href="https://github.com/Brosbers" target="_blank" rel="external">repositorio publico no GitHub</a></p>
+    <p>Voce tambem pode acessar meu <a href="https://www.youtube.com/@brosbers" target="_blank" rel="external">canal gratuito no Youtube</a></p>
+    <!-- o TARGET="_BLANK" faz com que o link abra em uma nova aba, indicado para quando o link for para um site externo ao seu -->
+    <!-- o REL="EXTERNAL" serve para dizer ao mecanismo de busca que é um link externo -->
+
+    <h1>Usando links INTERNOS</h2>
+    <p>Esta é a primeira pagina do site, se voce quiser acessar a segunda pagina <a href="pag002.html" rel="next" target="_self">clique aqui.</a></p>
+    <p>Voce tambem pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">pagina de noticias aqui.</a></p>
+    <!-- o TARGET="_SELF" faz com que o link abra na mesma aba, indicado quando o link for do seu proprio site -->
+    <!-- o REL="NEXT" serve para dizer que o link leva para uma proxima pagina -->
+
+    <h1>Links para DOWNLOAD</h1>
+    <ul>
+        <li><a href="livros/PDFAula10.pdf" download="PDFAula10" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livros/PDFAula10.zip" download="PDFAula10" type="application/zip">Baixar o livro compactado em ZIP</a></li>
+    </ul>
+
+</body>
+</html>

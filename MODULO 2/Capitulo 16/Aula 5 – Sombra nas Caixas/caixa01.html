@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas </title>
+    <style>
+        
+            /*  HEIGHT    -> ALTURA DA CAIXA
+                WIDTH     -> LARGURA DA CAIXA
+                BORDER    -> BORDA DA CAIXA 
+                PADDING   -> ESPAÇO DA BORDA PRA DENTRO DA CAIXA
+                MARGIN    -> ESPAÇO DA BORDA PRA FORA DA CAIXA
+                OUTLINE   -> ESPAÇO ENTRE A BORDA E A MARGEM
+            */
+        h1{ /*Box-level*/
+            
+            /*OBS: se quiser transformar um box-level em inline-level basta transformar de Display: block; para Display: inline; */
+
+            background-color: lightgray;            
+            /*Box-sizing */
+            height: 300px;
+            width: 300px;
+            /*Propriedades anatomicas da caixa (box) border, padding, margin, outline */
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkcyan;
+            /*Simplificando usando shorthand ficaria*/
+            border: 10px solid darkcyan;
+
+            padding-top: 10px; /*Sempre em sentido horario, de top -> righ -> bottom -> left*/
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*Simplificando usando shorthand ficaria*/
+            padding: 10px 10px 10px 10px; 
+            /* Como sao medidas iguais, pode simplificar para: */
+            padding: 10px;
+
+            margin-top: 10px; /*Sempre em sentido horario, de top -> righ -> bottom -> left*/
+            margin-right: 10px;
+            margin-bottom: 33px;
+            margin-left: 10px;
+            /*Simplificando usando shorthand ficaria*/
+            margin: 10px 10px 33px 10px; 
+            /*Voce tambem pode usar o "auto" no lugar das medidas da direita e esquerda se quiser centralizar o conteudo, ex: 
+            margin: 10px auto 33px auto */
+            
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: bisque;
+            /*Simplificando usando shorthand ficaria*/
+            outline: 5px dashed bisque;
+           
+        } 
+        a{  /*Inline-level*/
+
+            /*OBS: se quiser transformar um inline-level em box-level basta transformar de (Display: inline;) para (Display: block;) */
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkred;
+            /*Simplificando usando shorthand ficaria*/
+            border: 10px solid darkred;
+
+            padding-top: 5px;        
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            /*Simplificando usando shorthand ficaria*/
+            padding: 5px
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem sao exemplos de box-level, mas <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+
+</body>
+</html>
