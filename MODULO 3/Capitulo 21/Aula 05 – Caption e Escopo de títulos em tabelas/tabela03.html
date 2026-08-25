@@ -24,7 +24,7 @@
             padding: 10px;
         }
         thead, tfoot{
-            background-color: grey;
+            background-color: rgb(68, 68, 68);
             color: white;
         }
         td.num{
@@ -51,9 +51,12 @@
         <caption>População das Unidades Federativas</caption>
 
         <thead>
+            <!-- scope="col" fala pro navegador que os dados estão na coluna abaixo do titulo   
+            scope="row" fala pro navegador que os dados estão na mesma linha do titulo-->
+
             <tr>
-                <th>Estado</th><!--th = "titulo"-->
-                <th>População</th>
+                <th scope="col">Estado</th><!--th = "titulo"-->
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -168,7 +171,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
