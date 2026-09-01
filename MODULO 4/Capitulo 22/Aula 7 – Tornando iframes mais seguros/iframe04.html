@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal!</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, neque. Amet, nesciunt odit nulla repudiandae numquam necessitatibus, at error accusamus recusandae non minima eum ex tenetur architecto culpa, repellat aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nisi tempora, consequuntur doloribus, adipisci officiis, architecto temporibus inventore ullam deserunt sequi sapiente voluptatum et facilis illo! Laboriosam non facilis nulla!</p>
+ 
+    <iframe src="paginas-extras/pag04.html" sandbox="sandbox" referrerpolicy="no-referrer">  <!--Para tornar o iframe mais seguro utilize o sandbox e o no-referrer -->
+        <p>Seu navegador nao é compativel...</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima vitae dolor facilis deleniti, officiis distinctio excepturi repellat beatae consequatur unde laudantium inventore officia doloribus nihil aliquid ab reiciendis alias architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic consequatur eius deserunt officiis vel placeat asperiores, sapiente, nulla incidunt velit sequi tempora exercitationem dolorem ipsa quis doloribus sint porro!</p>
+
+    
+    <iframe src="paginas-extras/pag04.html" sandbox="allow-forms allow-same-origin allow-scripts" referrerpolicy="no-referrer">  <!--Se quiser permitir algumas coisas ao site, use isso no sandbox-->
+        <p>Seu navegador nao é compativel...</p>
+    </iframe>
+
+</body>
+</html>
