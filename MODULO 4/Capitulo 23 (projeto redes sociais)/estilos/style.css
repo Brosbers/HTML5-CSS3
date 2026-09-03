@@ -26,7 +26,7 @@ main{
 }
 
 section#telefone{
-    position: absolute;                  /*essas configs fazem a section ficar no centro da tela*/
+    position: absolute; /*essas configs fazem a section ficar no centro da tela*/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -46,4 +46,24 @@ iframe#tela{
 
     height: 468px;
     width: 264px;
+}
+
+section#redes-sociais img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%; /*Vai fazer com que as logos fiquem redondas*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
+    box-sizing: border-box; /*Para a borda fazer parte da caixa*/
+}
+
+section#redes-sociais{
+    text-align: right;
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.623);
+    transform: translate(-3px, -3px);
+    transition: transform .3s, border .6s; /*Transiçao para o transform e para o border aparecerem*/
+    text-decoration: none;
 }
