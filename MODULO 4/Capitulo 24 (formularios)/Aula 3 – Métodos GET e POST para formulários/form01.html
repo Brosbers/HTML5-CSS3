@@ -14,9 +14,11 @@
     
     <h1>Meu primeiro formulario</h1>
 
-    <form action="cadastro.php" autocomplete="off">
-        <!--Obs: o "i" no ID inome é so por motivos educacionais... tanto o Name qnt o Id podem ser iguais-->
-        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> <!--No label for="" usa sempre o ID-->
+    <form action="cadastro.php" method="get" autocomplete="off">
+        
+        <!--Method GET(padrao)(aparece na url): Usa quando os dados nao forem sensiveis tipo senhas, endereços, fotos e etc; tem um limite de 3.000bytes para ser enviado-->
+        <!--Method POST(não aparece na url): Quando forem dados sensiveis; Dados com mais de 3000bytes; Envios de arquivos.-->
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> 
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
 
