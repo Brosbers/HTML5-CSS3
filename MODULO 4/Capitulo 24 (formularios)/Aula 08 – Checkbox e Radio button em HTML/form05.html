@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            
+            <!--Checkbox... pode marcar quantas opções quiser-->
+            <input type="checkbox" name="esporteFut" id="iesporteFut" checked><label for="iesporteFut">Futebol</label> <br>
+            <input type="checkbox" name="esporteBas" id="iesporteBas"><label for="iesporteBas">Basquete</label> <br>
+            <input type="checkbox" name="esporteVol" id="iesporteVol"><label for="iesporteVol">Volei</label> <br>
+            <input type="checkbox" name="esporteTen" id="iesporteTen"><label for="iesporteTen">Tenis</label>
+            <!--Depois de construir a estrutura, envelope o esporte com label para dizer ao navegador oq cada um é, isso vai fazer com q vc nao precise apertar necessariamente na checkbox pra marcar, basta apertar no nome do esporte q ja vai marcar-->
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <!--Radio... so pode marcar uma opção-->
+            <input type="radio" name="sexo" id="imasculino" value="M" checked><label for="imasculino">Masculino</label> <!--checked: A caixa ja vem marcada-->
+            <input type="radio" name="sexo" id="ifeminino" value="F"> <label for="ifeminino">Feminino</label>
+            <!--O name tem que ser o mesmo, se nao a caixa vai permitir que marque 2 sexos de vez-->
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
