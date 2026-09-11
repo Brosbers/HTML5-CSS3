@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="post">
+        
+        <p><!--Select > option > optgroup-->
+            <label for="iEstado">Estado:</label>
+            <select name="estado" id="iEstado">
+                <option value="" selected> ---Selecione abaixo--- </option><!--Selected: para ja iniciar marcado-->
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option> 
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="CE">Ceará</option>
+                </optgroup>
+            </select>
+        </p>
+        
+        <p><!--Datalist-->
+            <label for="iProfissao">Profissão:</label>
+            <input type="text" name="profissao" id="iProfissao" list="listaProfissao"><!--Adiciona o list="" com o nome do id da lista abaixo-->
+            <datalist id="listaProfissao">
+                <option value="CONT">Contador</option>
+                <option value="MED">Médico</option>
+                <option value="PROF">Professor</option>
+                <option value="ADM">Administrador</option>
+            </datalist>
+        </p>
+
+        <p> <!--TextArea-->
+            <label for="iMsg">Mensagem:</label> <br>
+            <textarea name="msg" id="iMsg" cols="30" rows="5"></textarea>
+            <!--Se botar a area pro usuario digitar a mensagem, troque o method do form para post, ja que o get limita a 3k caracteres-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
