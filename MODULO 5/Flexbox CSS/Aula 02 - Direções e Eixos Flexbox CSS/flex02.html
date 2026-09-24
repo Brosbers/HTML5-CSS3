@@ -8,20 +8,21 @@
         div.conteiner{
             background-color: lightsalmon;
             
-            display: flex; /*O "pai" é quem leva a config display flex*/
+            display: flex;
+            flex-direction: row; /*row; row-reverse; column; column-reverse*/
         }
         div.item{
             background-color: lightseagreen;
             border: 1px solid black;
 
             text-align: center;
-            flex: auto; /*Faz as caixas ocuparem toda a largura possivel*/
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     
-    <div class="conteiner"> <!--Div Pai-->
+    <div class="conteiner"> 
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
