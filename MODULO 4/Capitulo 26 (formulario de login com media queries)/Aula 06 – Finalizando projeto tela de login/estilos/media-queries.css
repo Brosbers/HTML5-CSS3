@@ -17,7 +17,7 @@ TV: 1536px +
     }
     section#login{
         width: 80vw;
-        height: 310px;
+        height: 330px;
     }
     section#login > div#imagem{
         float: left;             /*Para aparecer na esquerda*/
@@ -47,7 +47,7 @@ TV: 1536px +
     }
     section#login{
         width: 1000px;
-        height: 310px;
+        height: 330px;
     }
     section#login > div#imagem{
         float: right;             
