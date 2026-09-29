@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box Model</title>
+    <style>
+        div.conteiner{
+            background-color: lightsalmon;
+            
+            display: flex; 
+            flex-flow: row nowrap; 
+        }
+        div.item{
+            background-color: lightseagreen;
+            border: 1px solid black;
+            
+            text-align: center;
+            flex-basis: 100px; /*flex-basis: auto; flex-basis: (valor)px;*/
+
+            /*obs: com flex-flow: nowrap quando o conteudo n couber mais ele vai expremer e nao vai ser mais 100px de largura, agora se o flex-flow for wrap ai ele vai continuar do mesmo tamanho, porem vai quebrar a linha quando nao couber mais*/
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="conteiner"> <!--Div Pai-->
+        <div class="item">A</div>
+        <div class="item">Outro conteudo</div>
+        <div class="item">C</div>
+        <div class="item">Conteudo um pouco maior</div>
+        <div class="item">E</div>
+        <div class="item">Conteudo maior ainda, que vai ocupar mais espaço</div>
+        <div class="item">G</div>
+    </div>
+
+</body>
+</html>
