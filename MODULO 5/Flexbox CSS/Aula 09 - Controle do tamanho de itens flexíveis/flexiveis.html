@@ -1,0 +1,37 @@
+<!--   
+        1- Flex-shrink: O quanto o item pode encolher 
+            *Padrão do flex-shrink: 1; (1 significa que pode encolher, 0 que nao pode)
+
+            1.1- O item encolhe em proporção ao valor do flex-shrink...
+
+                EX1: item1: flex-shrink: 0; item2 flex-shrink: 1; item3 flex-shrink: 0;  
+                
+                |    1    |; |  2  |; |    3    |; O item 2 vai encolher enquanto os outros nao
+
+                EX2: item1: flex-shrink: 2; item2 flex-shrink: 0; item3 flex-shrink: 1;  
+                
+                |1|; |    2    |; |  3  |; O item 1 vai encolher o dobro do item 3
+
+        2- Flex-grow: O quanto o item pode crescer 
+            *Padrão do flex-grow: 0; (0 significa que nao pode crescer, 1 que pode)
+       
+            2.1- O item cresce em proporção ao valor do flex-grow...
+            
+                EX1: item1: flex-grow: 0; item2 flex-grow: 1; item3 flex-grow: 2;  
+                
+                |  1  |; |    2    |; |      3      |; O item 3 vai crescer o dobro do item 2
+
+                EX2: item1: flex-grow: 0; item2 flex-grow: 2; item3 flex-grow: 2;  
+
+                |  1  |; |    2    |; |    3    |; Os itens 2 e 3 vão crescer na mesma proporção 
+
+        3- flex-basis + flex-grow + flex-shrink
+        
+            3.1- EXEMPLO:  ITEM1 > flex-basis: 150px; flex-grow: 0; flex-shrink: 1; 
+                           ITEM2 > flex-basis: 150px; flex-grow: 2; flex-shrink: 0;
+                           ITEM3 > flex-basis: 150px; flex-grow: 1; flex-shrink: 2; 
+
+                Aumentando: |  1  |; |      2      |; |    3    |; O item2 vai crescer o dobro do item3
+                Encolhendo: |  1  |; |    2    |; |3|; O item3 vai encolher o dobro do item1
+
+--> 
