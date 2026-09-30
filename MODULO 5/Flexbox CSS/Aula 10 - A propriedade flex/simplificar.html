@@ -1,0 +1,36 @@
+<!--        SHORTHAND para flex-grow, flex-shrink e flex-basis
+
+        Para substituir por exemplo:
+            exemplo{
+                flex-basis: 150px;
+                flex-grow: 1;
+                flex-shrink: 2;
+            } 
+        Tudo se transforma em:
+            exemplo{
+                flex: 1 2 150px
+            }   
+        Ou seja: flex = flex-grow + flex-shrink + flex-basis
+        
+            SIMPLIFICAÇOES QUE SE REPETEM MUITO
+
+        1- Caso os valores que voce queira declarar sejam os padroes voce pode usar tanto:
+            1.1- flex: 0 1 auto;
+                      ou
+                 flex: initial;            
+
+        2- Quando voce nao quiser deixar os itens flexiveis:
+            2.1- flex: 0 0 auto;
+                      ou
+                 flex: none;
+
+        3- Quando quiser deixar os itens completamente flexiveis:
+            3.1- flex: 1 1 auto;
+                      ou
+                 flex: auto;
+        
+        4- Quando declaramos apenas um valor, ex:
+            4.1- flex: 3;     Significa que o flex grow é 3 e o shrink e o basis sao o valor padrao    
+                    ou
+                 flex: 3 1 auto                  
+--> 
