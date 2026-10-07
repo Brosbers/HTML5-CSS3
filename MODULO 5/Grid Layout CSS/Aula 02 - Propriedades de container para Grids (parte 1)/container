@@ -1,0 +1,15 @@
+Propriedades de container do Grid Layout (parte 1)
+
+1- Display
+2- Grid-template-columns
+3- Grid-template-rows
+4- Grid-gap
+
+
+1- Display: Use display: grid; para criar um grid container
+
+2- Grid-template-columns: Use Grid-template-columns: auto auto; para fazer o container ter 2 colunas(se botar auto auto auto vai se criar 3 colunas e etc), e vao ser dimensionados igualmente graças ao auto
+
+3- Grid-template-rows: Use Grid-template-rows: 100px 100px; para aumentar a altura dos itens do container... nesse caso como sao 2 colunas o container vai ter 200px de altura  
+
+4- Grid-gap: Use Gap: 20px; para espaçar cada item de dentro do container entre si em 20px
