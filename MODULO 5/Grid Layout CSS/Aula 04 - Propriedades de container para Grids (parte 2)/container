@@ -13,20 +13,20 @@ Grid-gap✅
 
                     OBS: 1º Align-items e Justify-items = configuraçao dos itens (itens dentro do conteudo)
                             Align-content e Justify-content = configuraçao dos conteudos (conjunto dos itens)
-                        2º Align-items e Align-content = Alinhamento VERTICAL
-                            Justify-items e Justify-content = Alinhamento HORIZONTAL
+                        2º PARA GRID LAYOUT: Align-items e Align-content = Alinhamento VERTICAL
+                                             Justify-items e Justify-content = Alinhamento HORIZONTAL
 
-1.1 Align-items: stretch; -> Valor padrão, vai esticar o item verticalmente até ele caber dentro da grade.
+1.1 Align-items: stretch;(ou normal) -> Valor padrão, vai esticar o item verticalmente até ele caber dentro da grade.
 1.2 Align-items: start; -> Vai pegar o item e colocá-lo no inicio(em cima), verticalmente, da grade.
 1.3 Align-items: center; -> Vai pegar o item e colocá-lo no meio, verticalmente, da grade.
 1.4 Align-items: end; ->  Vai pegar o item e colocá-lo no fim(em baixo), verticalmente, da grade.
--------------------------------------------------------------------------------------------------------------------------------
-2.1 Justify-items: stretch; -> Valor padrão, vai esticar o item horizontalmente até ele caber dentro da grade.
+-------------------------------------------------------------------------------------------------------
+2.1 Justify-items: stretch;(ou normal) -> Valor padrão, vai esticar o item horizontalmente até ele caber dentro da grade.
 2.2 Justify-items: start; -> Vai pegar o item e colocá-lo no inicio(na esquerda), horizontalmente, da grade.
 2.3 Justify-items: center; -> Vai pegar o item e colocá-lo no meio, horizontalmente, da grade.
 2.4 Justify-items: end; -> Vai pegar o item e colocá-lo no fim(na direita), horizontalmente, da grade.
--------------------------------------------------------------------------------------------------------------------------------
-3.1 Align-content: start; -> Valor padrão, vai colar o conteudo na parte superior da caixa, verticalmente.
+-------------------------------------------------------------------------------------------------------
+3.1 Align-content: start; -> Vai colar o conteudo na parte superior da caixa, verticalmente.
 3.2 Align-content: center; -> Vai centralizar o conteudo na caixa, verticalmente.
 3.3 Align-content: end; -> Vai colar o conteudo na parte inferior da caixa, verticalmente.
 3.4 Align-content: space-between; -> Vai adaptar verticalmente o conteudo, a depender da quantidade de tracks, fazendo com que uma fique colada em cima, outra embaixo, e as restantes vao se distribuir igualmente entre elas, independente de quantas tiverem.
@@ -79,9 +79,9 @@ Grid-gap✅
         |-------------------------------|
         |            space              |
         |-------------------------------|  
-3.7 Align-content: stretch; -> Vai esticar verticalmente o conteudo, fazendo com que ele preencha toda a caixa.
--------------------------------------------------------------------------------------------------------------------------------
-4.1 Justify-content: start; -> Valor padrão, vai colar o conteudo na parte esquerda da caixa, horizontalmente.
+3.7 Align-content: stretch;(ou normal) -> Valor padrão, vai esticar verticalmente o conteudo, fazendo com que ele preencha toda a caixa.
+-------------------------------------------------------------------------------------------------------
+4.1 Justify-content: start; -> Vai colar o conteudo na parte esquerda da caixa, horizontalmente.
 4.2 Justify-content: center; -> Vai centralizar o conteudo na caixa, horizontalmente. 
 4.3 Justify-content: end; -> Vai colar o conteudo na parte direita da caixa, horizontalmente.
 4.4 Justify-content: space-between; -> Vai adaptar horizontalmente o conteudo, a depender da quantidade de tracks, fazendo com que uma fique colada na esquerda, outra na direita, e as restantes vao se distribuir igualmente entre elas, independente de quantas tiverem. 
@@ -114,4 +114,4 @@ Grid-gap✅
         | e |           | e  e |           | e  e |           | e |
         |   | < item7 > |      | < item8 > |      |           |   |
         |---|-----------|------|-----------|------|-----------|---|
-4.7 Justify-content: stretch; -> Vai esticar horizontalmentee o conteudo, fazendo com que ele preencha toda a caixa.    
+4.7 Justify-content: stretch;(ou normal) -> Valor padrão, vai esticar horizontalmentee o conteudo, fazendo com que ele preencha toda a caixa.    
