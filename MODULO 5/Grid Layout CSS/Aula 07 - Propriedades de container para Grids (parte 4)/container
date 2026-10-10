@@ -1,0 +1,59 @@
+Propriedades de container do Grid Layout (parte 4)
+
+Display✅
+Grid-template-columns✅
+Grid-template-rows✅
+Gap✅
+Align-items✅
+Justify-items✅
+Align-content✅
+Justify-content✅
+Grid-auto-row✅
+Grid-auto-column✅
+Place-items✅
+Place-content✅
+Grid-template✅
+
+1- Função repeat() 
+2- Unidade fraction
+
+    1.1- Função repeat() -> Quando você precisa criar várias colunas ou linhas com tamanhos iguais ou repetir um padrão sem escrever cada tamanho individualmente.
+    
+    No lugar de grid-template-columns: auto auto auto; ou do grid-template-rows: 100px 100px 100px; podemos simplificar usando a funçao repeat()
+
+        EX: div.container{
+        display: grid;
+        grid-template-columns: repeat(3, auto); 
+        grid-template-rows: repeat(3, 100px);
+        } 
+-------------------------Simplificando------------------------------------
+        div.container{
+        display: grid;
+        grid-template: repeat(3, 100px) / repeat(3, auto)
+        } 
+
+    2.1- Unidade fraction (fr) -> Quando você quer distribuir o espaço disponível proporcionalmente entre as colunas ou linhas, sem precisar definir suas dimensões em px ou em auto.
+
+        OBS: fr não é uma medida fixa como px, ela representa uma fração do espaço disponível.  
+        
+        EX: div.container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+        }
+        /*A segunda coluna terá o dobro da fração de espaço disponível atribuída à primeira.*/
+
+EX com medidas MISTAS -> Você pode combinar px, % e fr para criar colunas com tamanhos fixos, proporcionais ao container e flexíveis.
+
+    EX01- Considerando um container de 1500px de largura:
+
+    .container {
+    display: grid;
+    grid-template-columns: 100px 20% 1fr 1fr; OU grid-template-columns: 100px 20% repeat(2, 1fr);
+    } 
+
+    A coluna A terá 100px;
+    A coluna B terá 20% de 1500 = 300px
+    A coluna C e D terão 1fr do restante da largura do conteiner(1500px - 400px = 1100px) dividido por 2 que vai ser 550px pra cada
+   
+    OBS: Como C e D usam 1fr, elas dividem igualmente o espaço restante depois de descontar os 100px e os 20%.
+         
