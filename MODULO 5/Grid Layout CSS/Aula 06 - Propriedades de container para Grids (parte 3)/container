@@ -9,11 +9,35 @@ Justify-items✅
 Align-content✅
 Justify-content✅
 
+0- Grid-auto-flow
 1- Grid-auto-row
 2- Grid-auto-column 
 3- Place-items   |------------------------------|
 4- Place-content | propriedades simplificadoras |
 5- Grid-template |------------------------------|
+
+    0.1- Grid-auto-flow: row; -> Valor padrão. Define que os itens do Grid serão posicionados automaticamente em sequência, preenchendo as linhas primeiro (na horizontal).
+
+    0.2- Grid-auto-flow: column; -> Os itens serão posicionados preenchendo as colunas primeiro (na vertical).
+
+    EX: Grid-auto-flow: row; |-----------------------|
+                             |   A   |   B   |   C   |
+                             |-----------------------|
+                             |   D   |   E   |   F   |
+                             |-----------------------|
+                             |   G   |   H   |   I   | 
+                             |-----------------------|
+                             |   J   |       |       |
+                             |-----------------------|
+        Grid-auto-flow: column; |-----------------------|-------|
+                                |   A   |   D   |   G   |   J   |
+                                |-----------------------|-------|
+                                |   B   |   E   |   H   |       |
+                                |-----------------------|-------|
+                                |   C   |   F   |   I   |       |
+                                |-----------------------|-------|
+                                                
+OBS: Essa propriedade controla a direção do posicionamento automático dos itens, não o tamanho das linhas ou colunas.
 
     1.1- Grid-auto-row: ...px; -> Quando você tem mais itens do que as linhas definidas no grid-template-rows e quer controlar a altura das novas linhas que possam surgir. (para baixo)
 
