@@ -1,0 +1,44 @@
+Propriedades de container do Grid Layout (parte 3)
+
+Display✅
+Grid-template-columns✅
+Grid-template-rows✅
+Gap✅
+Align-items✅
+Justify-items✅
+Align-content✅
+Justify-content✅
+
+1- Grid-auto-row
+2- Grid-auto-column 
+3- Place-items   |------------------------------|
+4- Place-content | propriedades simplificadoras |
+5- Grid-template |------------------------------|
+
+    1.1- Grid-auto-row: ...px; -> Quando você tem mais itens do que as linhas definidas no grid-template-rows e quer controlar a altura das novas linhas que possam surgir. (para baixo)
+
+    2.1- Grid-auto-columns: ...px; -> Quando os itens precisam criar novas colunas automaticamente e você quer controlar a largura delas. (ao lado)   
+
+        OBS: As propriedades grid-auto-row e grid-auto-column só controlam as tracks criadas automaticamenre (grid implicito), e não as tracks definidas explicitamente (grid explicito) pelo grid-template-rows e grid-template-columns.
+    
+    -------------------------------------SIMPLIFICAÇÕES-------------------------------------- 
+    EX: div.container{
+        display: grid;
+
+        grid-template-columns: auto auto auto; ---\
+        grid-template-rows: 100px 100px 100px; ---/
+
+        align-items: stretch; ---\
+        justify-items: center;---/ 
+
+        align-content: start; ---\
+        justify-content: end; ---/
+    }  
+    3.1- Place-items: stretch center; -> Vai configurar de forma simplificada o Align-items e o Justify-items
+        OBS: Primeiro o align depois o justify.
+    
+    4.1- Place-content: start end; -> Vai configurar de forma simplificada o Align-content e o Justify-content
+        OBS: Primeiro o align depois o justify.
+
+    5.1 Grid-template: 100px 100px 100px / auto auto auto; -> Vai configurar de forma simplificada o grid-template-rows e o grid-template-colums
+        OBS: Primeiro o grid-template-rows depois o grid-template-columns.    
