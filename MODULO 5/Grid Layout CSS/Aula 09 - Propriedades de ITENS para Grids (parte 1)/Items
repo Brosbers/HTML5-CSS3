@@ -5,12 +5,6 @@ Grid-row-end
 Grid-column-start
 Grid-column-end
 
-CSS CONTAINER:
-    div.container{
-        display: grid;
-        grid-template-rows: repeat(4, 100px);
-        grid-template-columns: repear(4, 1fr);
-    }    
                                 COLUMN
 
                       1     2     3     4     5 
@@ -23,6 +17,14 @@ CSS CONTAINER:
                     4-|- CAIXA2  -|-  CAIXA3 -|-             
                       |           |           |     
                     5-|-----|-----|-----|-----|-
+
+CSS CONTAINER:
+    div.container{
+        display: grid;
+        grid-template-rows: repeat(4, 100px);
+        grid-template-columns: repear(4, 1fr);
+    }    
+
 CSS ITEMS: 
   
     item.caixa1{
