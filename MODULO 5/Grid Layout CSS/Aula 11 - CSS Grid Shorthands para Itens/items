@@ -1,0 +1,58 @@
+Propriedades de ITEMS para Grids (parte 2)
+
+Grid-row-start✅
+Grid-row-end✅
+Grid-column-start✅
+Grid-column-end✅
+
+Span
+Grid-row
+Grid-column
+Grid-area
+
+                                COLUMN
+
+                      1     2     3     4     5 
+                    1-|-----|-----|-----|-----|- -5
+                      |                       |             
+                    2-|-        CAIXA1       -|- -4            
+                      |                       |             
+            ROW     3-|-----|-----|-----|-----|- -3            
+                      |           |           |            
+                    4-|- CAIXA2  -|-  CAIXA3 -|- -2            
+                      |           |           |     
+                    5-|-----|-----|-----|-----|- -1
+                     -5    -4    -3    -2    -1                
+
+1- SPAN -> Faz o item ocupar uma quantidade de linhas ou colunas a partir da posição em que começa. Ex: span 2 faz a caixa ocupar 2 linhas. 
+
+    EX: .caixa1{
+            grid-row-start: 1;
+            grid-row-end: span 2;
+            grid-column-start: 1;
+            grid-column-end: span 4;
+        }
+
+---------------------SIMPLIFICAÇÕES--------------------------
+
+2- Grid-row -> Ao invés de usar grid-row-start e grid-row-end, podemos usar o grid-row: 1 / 3; (start / end)
+
+    EX: .caixa1{
+        grid-row: 1 / 3;    OU    grid-row: 1 / span 2;   ETC...
+        }
+3- Grid-column -> Ao invés de usar grid-column-start e grid-column-end, podemos usar o grid-column: 1 / 5; (start / end)  
+
+        EX: .caixa1{
+        grid-column: 1 / 5;    OU    grid-column: 1 / span 4;   ETC...
+        }
+
+4- Grid-area -> Simplifica grid-row-start, grid-row-end, grid-column-start e grid-column-end, reunindo as quatro propriedades em uma só.
+OBS: Define, nessa ordem, grid-row-start > grid-column-start > grid-row-end > grid-column-end.
+
+        EX: .caixa1{
+          grid-area: 1 / 1 / 3 / 5;
+        }
+
+
+                   
+
